@@ -721,3 +721,19 @@ body.scrolled .about-me {
     right: 10px;
   }
 }
+
+section {
+    flex-direction: column;
+    gap: 30px;
+    padding: 25px 20px;
+    text-align: center;
+  }
+
+  /* Force video to appear first on mobile */
+  section:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .video-content {
+    order: -1;
+  }
